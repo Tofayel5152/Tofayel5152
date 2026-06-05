@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Tasmin Desserts - Handcrafted desserts made with love and fresh ingredients. Custom celebration cakes, French macarons, artisan chocolates, and more. Order online for your special occasion."
+    />
+    <meta
+      name="keywords"
+      content="desserts, cakes, macarons, chocolates, custom cakes, bakery, pastries, celebration cakes"
+    />
+    <meta name="author" content="Tasmin Desserts" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content=" https://TasminDesserts.github.io/TasminDesserts/"
+    />
+    <meta property="og:title" content="Tasmin Desserts - Sweet Creations" />
+    <meta
+      property="og:description"
+      content="Indulge in the finest handcrafted desserts made with love and the freshest ingredients. Custom cakes, macarons, and artisan chocolates."
+    />
+    <meta property="og:image" content="Pictures/cover.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://TasminDesserts.github.io/TasminDesserts/"
+    />
+    <meta
+      property="twitter:title"
+      content="Tasmin Desserts - Sweet Creations"
+    />
+    <meta
+      property="twitter:description"
+      content="Indulge in the finest handcrafted desserts made with love and the freshest ingredients."
+    />
+    <meta property="twitter:image" content="Pictures/cover.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
+    <meta name="theme-color" content="#E6A4B4" />
+
+    <title>Tasmin Desserts - Sweet Creations</title>
+    <link rel="stylesheet" href="Styles/style.css" />
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+      <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+
+    <!-- Loading Animation -->
+    <div class="loader-wrapper" id="loader">
+      <div class="loader">
+        <div class="cupcake">
+          <i class="fas fa-birthday-cake"></i>
+        </div>
+        <p>Loading Sweet Creations...</p>
+      </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+      <div class="container nav-container">
+        <a href="#" class="logo">Tasmin<span>Desserts</span></a>
+
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav role="navigation" aria-label="Main navigation">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#specialties">Specialties</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Sweet Creations by Tasmin</h1>
+          <p>
+            Indulge in the finest handcrafted desserts made with love and the
+            freshest ingredients. From traditional favorites to innovative
+            creations, each bite is a celebration of flavor.
+          </p>
+          <div class="hero-btns">
+            <a href="#specialties" class="btn btn-primary">Explore Desserts</a>
+            <a href="#contact" class="btn">Order Now</a>
+            <a href="#contact" class="btn btn-feedback">Share Feedback</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>About Tasmin Desserts</h2>
+          <p>
+            Discover the story behind our passion for creating delightful
+            desserts that bring joy to every occasion.
+          </p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-img" data-aos="fade-right">
+            <img
+              src="Pictures/about.jpg"
+              alt="Tasmin preparing desserts"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-text" data-aos="fade-left">
+            <h3>Baking With Passion Since 2020</h3>
+            <p>
+              Tasmin Desserts is a premium homemade dessert brand dedicated to
+              refined taste and elegant presentation. Each creation is
+              handcrafted using carefully selected, high-quality ingredients to
+              ensure exceptional flavor and finish.
+            </p>
+            <p>
+              Specializing in bespoke desserts for celebrations and special
+              moments, we deliver sophisticated sweetness, made fresh in our
+              home kitchen and crafted with passion for excellence.
+            </p>
+            <a href="#contact" class="btn">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet the Baker Section -->
+    <section class="owner section-padding" id="owner">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Meet the Baker</h2>
+        </div>
+        <div class="owner-content">
+          <div class="owner-img" data-aos="fade-right">
+            <img
+              src="Pictures/owner.jpg"
+              alt="Owner of Tasmin Desserts"
+              loading="lazy"
+            />
+          </div>
+          <div class="owner-info" data-aos="fade-left">
+            <h2 class="owner-name">Jaima Tasmin</h2>
+            <h3>Crafting Elegance, One Dessert at a Time.</h3>
+            <p>
+              Behind Tasmin Desserts is a dedication to refined taste,
+              thoughtful detail, and uncompromising quality. Every creation is
+              carefully handcrafted in my home kitchen, ensuring each dessert
+              reflects elegance, balance, and the care that defines my work.
+            </p>
+            <div class="social-links owner-socials">
+              <a
+                href="https://www.facebook.com/rodala.bekal.129"
+                target="_blank"
+                aria-label="Owner's Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/tasmim6724?igsh=MW0xbHp3cmJzbzI0"
+                target="_blank"
+                aria-label="Owner's Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=8801625225738"
+                target="_blank"
+                aria-label="Owner's WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="specialties section-padding" id="specialties">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Our Specialties</h2>
+          <p>
+            Explore our signature desserts that have won the hearts of our
+            customers.
+          </p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper specialty-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide specialty-card">
+              <div class="specialty-img">
+                <img
+                  src="Pictures/ChocolateCake.jpg"
+                  alt="Chocolate Cake"
+                  loading="lazy"
+                />
+              </div>
+              <div class="specialty-content">
+                <h3>Chocolate Cake</h3>
+                <p>
+                  Layers of velvet-soft chocolate sponge paired with a rich,
+                  hand-whisked truffle frosting.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide specialty-card">
+              <div class="specialty-img">
+                <img
+                  src="Pictures/VanillaCake.jpg"
+                  alt="Vanilla Cake"
+                  loading="lazy"
+                />
+              </div>
+              <div class="specialty-content">
+                <h3>Vanilla Cake</h3>
+                <p>
+                  Experience the perfect crumb: a moist, airy vanilla cake
+                  paired with whipped frosting that melts on your tongue.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide specialty-card">
+              <div class="specialty-img">
+                <img
+                  src="Pictures/swissrollcake.jpg"
+                  alt="Swiss Roll Cake"
+                  loading="lazy"
+                />
+              </div>
+              <div class="specialty-content">
+                <h3>Swiss Roll Cake</h3>
+                <p>
+                  Delicate chocolate cake and luscious cream filling come
+                  together in every perfectly swirled, indulgent bite.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide specialty-card">
+              <div class="specialty-img">
+                <img src="Pictures/donuts.jpg" alt="Donuts" loading="lazy" />
+              </div>
+              <div class="specialty-content">
+                <h3>Assorted Donuts</h3>
+                <p>
+                  A colorful collection of our favorite treats—soft, sweet, and
+                  made fresh daily to brighten your morning.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide specialty-card">
+              <div class="specialty-img">
+                <img
+                  src="Pictures/DreamCake.jpg"
+                  alt="Dream Cake"
+                  loading="lazy"
+                />
+              </div>
+              <div class="specialty-content">
+                <h3>Dream Cake</h3>
+                <p>
+                  A viral sensation featuring layers of chocolate cake, pudding,
+                  ganache, and a crisp chocolate shell.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding" id="gallery">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Sweet Gallery</h2>
+          <p>
+            A visual feast of our delicious creations. Click on any image to
+            view it larger.
+          </p>
+        </div>
+
+        
+        <div class="gallery-filters" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cakes">Cakes</button>
+          <button class="filter-btn" data-filter="pastries">Pastries & Donuts</button>
+          <button class="filter-btn" data-filter="custom">Custom Orders</button>
+          <button class="filter-btn" data-filter="others">Others</button>
+        </div>
+        <div class="gallery-container" id="mainGallery">
+          <!-- Gallery Items -->
+          <div class="gallery-item" data-category="cakes" data-src="Pictures/ChocolateCake.jpg">
+            <img
+              src="Pictures/ChocolateCake.jpg"
+              alt="Chocolate Cake"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Chocolate Cake</span>
+              <button class="add-to-order-btn" data-name="Chocolate Cake"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            data-category="cakes"
+            data-src="Pictures/ChocolateOverloadCake.jpg"
+          >
+            <img
+              src="Pictures/ChocolateOverloadCake.jpg"
+              alt="Chocolate Overload Cake"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Chocolate Overload Cake</span>
+              <button class="add-to-order-btn" data-name="Chocolate Overload Cake"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="pastries" data-src="Pictures/ChocolatePasty.jpg">
+            <img
+              src="Pictures/ChocolatePasty.jpg"
+              alt="Chocolate Pastry"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Chocolate Pastry</span>
+              <button class="add-to-order-btn" data-name="Chocolate Pastry"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="cakes" data-src="Pictures/DreamCake.jpg">
+            <img src="Pictures/DreamCake.jpg" alt="Dream Cake" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Dream Cake</span>
+              <button class="add-to-order-btn" data-name="Dream Cake"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="cakes" data-src="Pictures/JarCake.jpg">
+            <img src="Pictures/JarCake.jpg" alt="Jar Cake" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Jar Cake</span>
+              <button class="add-to-order-btn" data-name="Jar Cake"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="cakes" data-src="Pictures/RoshmalaiCake.jpg">
+            <img
+              src="Pictures/RoshmalaiCake.jpg"
+              alt="Roshmalai Cake"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Roshmalai Cake</span>
+              <button class="add-to-order-btn" data-name="Roshmalai Cake"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="cakes" data-src="Pictures/TubCake.jpg">
+            <img src="Pictures/TubCake.jpg" alt="Tub Cake" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Tub Cake</span>
+              <button class="add-to-order-btn" data-name="Tub Cake"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="cakes" data-src="Pictures/VanillaCake.jpg">
+            <img
+              src="Pictures/VanillaCake.jpg"
+              alt="Vanilla Cake"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Vanilla Cake</span>
+              <button class="add-to-order-btn" data-name="Vanilla Cake"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="cakes" data-src="Pictures/swissrollcake.jpg">
+            <img
+              src="Pictures/swissrollcake.jpg"
+              alt="Swiss Roll Cake"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Swiss Roll Cake</span>
+              <button class="add-to-order-btn" data-name="Swiss Roll Cake"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="pastries" data-src="Pictures/donuts.jpg">
+            <img src="Pictures/donuts.jpg" alt="Donuts" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Assorted Donuts</span>
+              <button class="add-to-order-btn" data-name="Assorted Donuts"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="cakes" data-src="Pictures/chocolates.jpg">
+            <img
+              src="Pictures/chocolates.jpg"
+              alt="Chocolates"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Chocolate Drip Cake</span>
+              <button class="add-to-order-btn" data-name="Chocolate Drip Cake"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="pastries" data-src="Pictures/cupcakes.jpg">
+            <img src="Pictures/cupcakes.jpg" alt="Cupcakes" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Cup Cakes</span>
+              <button class="add-to-order-btn" data-name="Cup Cakes"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="others" data-src="Pictures/custerd.jpg">
+            <img src="Pictures/custerd.jpg" alt="Custard" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Fruit Custard</span>
+              <button class="add-to-order-btn" data-name="Fruit Custard"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="pastries" data-src="Pictures/VanillaPastry.jpg">
+            <img
+              src="Pictures/VanillaPastry.jpg"
+              alt="Vanilla Pastry"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Vanilla Pastry</span>
+              <button class="add-to-order-btn" data-name="Vanilla Pastry"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="cakes" data-src="Pictures/poundcake.jpg">
+            <img src="Pictures/poundcake.jpg" alt="Pound Cake" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Pound Cake</span>
+              <button class="add-to-order-btn" data-name="Pound Cake"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="others" data-src="Pictures/pudding.jpg">
+            <img src="Pictures/pudding.jpg" alt="Pudding" loading="lazy" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Caramel Pudding</span>
+              <button class="add-to-order-btn" data-name="Caramel Pudding"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Orders Segment -->
+        <div class="section-title" data-aos="fade-up" style="margin-top: 80px">
+          <h2>Custom Orders</h2>
+          <p>
+            Bespoke creations designed to your exact specifications. From themed
+            cakes to personalized treats, we bring your vision to life with
+            elegance and flavor.
+          </p>
+        </div>
+
+        <div class="gallery-container">
+          <div class="gallery-item" data-category="custom" data-src="Pictures/Custom1.jpg">
+            <img
+              src="Pictures/Custom1.jpg"
+              alt="Custom Order 1"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Custom Creation</span>
+              <button class="add-to-order-btn" data-name="Custom Creation"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="custom" data-src="Pictures/Custom2.jpg">
+            <img
+              src="Pictures/Custom2.jpg"
+              alt="Custom Order 2"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Custom Creation</span>
+              <button class="add-to-order-btn" data-name="Custom Creation"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="custom" data-src="Pictures/Custom3.jpg">
+            <img
+              src="Pictures/Custom3.jpg"
+              alt="Custom Order 3"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Custom Creation</span>
+              <button class="add-to-order-btn" data-name="Custom Creation"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="custom" data-src="Pictures/Custom4.jpg">
+            <img
+              src="Pictures/Custom4.jpg"
+              alt="Custom Order 4"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Custom Creation</span>
+              <button class="add-to-order-btn" data-name="Custom Creation"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="custom" data-src="Pictures/Custom5.jpg">
+            <img
+              src="Pictures/Custom5.jpg"
+              alt="Custom Order 5"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Custom Creation</span>
+              <button class="add-to-order-btn" data-name="Custom Creation"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="custom" data-src="Pictures/Custom6.jpg">
+            <img
+              src="Pictures/Custom6.jpg"
+              alt="Custom Order 6"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Custom Creation</span>
+              <button class="add-to-order-btn" data-name="Custom Creation"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="custom" data-src="Pictures/Custom7.jpg">
+            <img
+              src="Pictures/Custom7.jpg"
+              alt="Custom Order 7"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Custom Creation</span>
+              <button class="add-to-order-btn" data-name="Custom Creation"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="custom" data-src="Pictures/Custom8.jpg">
+            <img
+              src="Pictures/Custom8.jpg"
+              alt="Custom Order 8"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <span class="gallery-name">Custom Creation</span>
+              <button class="add-to-order-btn" data-name="Custom Creation"><i class="fas fa-cart-plus"></i> Add to Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facebook Feed Section -->
+    <section class="facebook-feed section-padding" id="recent-posts">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Recent Updates</h2>
+          <p>Stay up to date with our latest creations and announcements directly from our Facebook page.</p>
+        </div>
+        <div class="fb-feed-container" data-aos="fade-up">
+          <div class="fb-page" 
+            data-href="https://www.facebook.com/61578595806917" 
+            data-tabs="timeline" 
+            data-width="500" 
+            data-height="600" 
+            data-small-header="false" 
+            data-adapt-container-width="true" 
+            data-hide-cover="false" 
+            data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/61578595806917" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/61578595806917">Tasmin Desserts</a>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Get In Touch</h2>
+          <p>Ready to order or have questions? We'd love to hear from you!</p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Connect With Tasmin Desserts</h3>
+            <p>
+              Place your order, inquire about custom creations, or just say
+              hello. We typically respond within 24 hours.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>Mirsharai, Chittagong</p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+880 1625-225738</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/profile.php?id=61578595806917"
+                target="_blank"
+                aria-label="Visit our Facebook page"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=8801625225738"
+                aria-label="Contact us on WhatsApp"
+                target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Contact Instructions -->
+          <div class="contact-instructions">
+            <h3>How to Order</h3>
+            <p>To place an order or make an inquiry:</p>
+            <ol>
+              <li>
+                Send us a message on
+                <a
+                  href="https://www.facebook.com/profile.php?id=61578595806917"
+                  target="_blank"
+                  class="highlight-link"
+                  >Facebook</a
+                >
+                or
+                <a
+                  href="https://api.whatsapp.com/send?phone=8801625225738"
+                  target="_blank"
+                  class="highlight-link"
+                  >WhatsApp</a
+                >
+              </li>
+              <li>Call or text us at the number provided</li>
+            </ol>
+            <p>Please include:</p>
+            <ul>
+              <li>Type of dessert you're interested in</li>
+              <li>Quantity needed</li>
+              <li>Date needed by</li>
+              <li>Any special requests or dietary requirements</li>
+            </ul>
+            <a
+              href="https://www.facebook.com/profile.php?id=61578595806917"
+              target="_blank"
+              class="btn btn-primary"
+              >Message on Facebook</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <div class="footer-logo">Tasmin<span>Desserts</span></div>
+            <p>Elegant Desserts, Crafted with Care.</p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/profile.php?id=61578595806917"
+                target="_blank"
+                aria-label="Visit our Facebook page"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send/?phone=8801625225738"
+                aria-label="Contact us on WhatsApp"
+                target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#specialties">Specialties</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-hours">
+            <h4>Ordering Hours</h4>
+            <ul>
+              <li>Everyday: 9 AM - 10 PM</li>
+            </ul>
+            <p class="note">
+              For custom orders, please contact us at least 2 days in advance.
+            </p>
+            <a
+              href="https://www.facebook.com/profile.php?id=61578595806917"
+              target="_blank"
+              class="btn footer-btn"
+            >
+              <i class="fab fa-facebook-f"></i> Visit Our Page
+            </a>
+          </div>
+
+          <div class="footer-qr">
+            <h4>Scan & Follow Us</h4>
+            <div class="footer-qr-wrapper">
+              <a href="https://www.facebook.com/profile.php?id=61578595806917" target="_blank" aria-label="Scan QR to visit our Facebook page">
+                <img src="Pictures/TasminDesserts_QR.png" alt="Scan to visit Tasmin Desserts on Facebook" loading="lazy" />
+              </a>
+            </div>
+            <p>Scan the QR code to find us on Facebook</p>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; <span id="copyrightYear">2025</span> Tasmin Desserts. All rights reserved. | Designed with
+            <i class="fas fa-heart" style="color: var(--primary-color)"></i> for
+            dessert lovers <br />Designed & developed by Tofayel Ahmmed.
+            <a
+              href="https://www.facebook.com/tofayel.ahmmed512"
+              target="_blank"
+              style="text-decoration: underline; color: inherit"
+              >Facebook</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Gallery Modal -->
+    <div
+      class="modal"
+      id="galleryModal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Gallery image viewer"
+    >
+      <span class="close-modal" id="closeModal" aria-label="Close gallery"
+        >&times;</span
+      >
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="" />
+      </div>
+    </div>
+
+    
+    <!-- Floating Cart for Order Builder -->
+    <button id="floatingCart" class="floating-cart" aria-label="View Order">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="Scripts/script.js"></script>
+  </body>
+</html>
