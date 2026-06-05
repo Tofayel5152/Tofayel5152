@@ -1572,6 +1572,7 @@ body.dark-mode .facebook-feed {
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 800px;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -1579,6 +1580,11 @@ body.dark-mode .facebook-feed {
   padding: 25px 0;
   margin: 30px auto 0; /* Centered with top margin */
   text-align: center;
+}
+
+body.dark-mode .fb-feed-container {
+  background: #3a3a3a;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .fb-page, .fb-page span, .fb-page iframe {
