@@ -14,7 +14,7 @@ My academic journey has built a versatile foundation across full-stack web devel
 
 ## 🎓 Education
 
-**International Islamic University Chittagong**
+**International Islamic University Chittagong**<br>
 B.Sc. in Computer Science & Engineering — 2024 – Present
 
 ## 🛠️ Skills & Technologies
