@@ -57,7 +57,7 @@
   </div>
 
   <!-- HERO -->
-  <header id="home" class="relative pt-40 pb-20 px-6 min-h-screen flex items-center justify-center overflow-hidden">
+  <header id="home" class="relative pt-28 md:pt-40 pb-20 px-6 min-h-screen flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 z-0 opacity-20" style="background-image: radial-gradient(#e2f24d 1px, transparent 1px); background-size: 40px 40px;"></div>
     
     <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center relative z-10">
@@ -106,8 +106,10 @@
   <section id="about" class="py-20 px-6">
     <div class="max-w-7xl mx-auto">
       <div class="mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-2">About Me</h2>
-        <div class="h-1 w-42 mx-auto bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-10"></div>
+        <div class="flex flex-col items-center mb-10 max-w-max mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">About Me</h2>
+          <div class="h-1 w-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+        </div>
         
         <div class="bg-[#161615] rounded-2xl p-6 md:p-10 max-w-6xl mx-auto border border-white/10 shadow-lg">
           <p class="text-slate-300 text-lg leading-relaxed mb-6">
@@ -151,8 +153,10 @@
   <!-- SKILLS -->
   <section id="skills" class="py-20 px-6">
     <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Skills & Technologies</h2>
-      <div class="h-1 w-89 mx-auto bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-12"></div>
+      <div class="flex flex-col items-center mb-12 max-w-max mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Skills &amp; Technologies</h2>
+        <div class="h-1 w-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+      </div>
       
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <!-- HTML -->
@@ -238,7 +242,7 @@
   <!-- PROJECTS -->
   <section id="projects" class="py-20 px-6">
     <div class="max-w-7xl mx-auto">
-      <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
         <div>
           <h2 class="text-3xl md:text-5xl font-bold mb-4">Featured <span class="text-[#e2f24d]">Project</span></h2>
           <p class="text-white/60">A glimpse into what I've been building.</p>
@@ -255,14 +259,14 @@
           <img src="Pictures/web1st.png" alt="Tasmin Desserts Preview" class="w-full h-full object-cover" />
 
             <div class="absolute inset-0 flex items-center justify-center text-[#e2f24d]/20">
-              <i class="fas fa-image text-6xl"></i>
+              <i class="fas fa-image text-4xl sm:text-5xl md:text-6xl"></i>
             </div>
             <div class="absolute inset-0 bg-[#e2f24d]/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
               <a href="https://tasmindesserts.github.io/TasminDesserts/" target="_blank" class="px-6 py-3 bg-[#161615] text-white rounded-full font-bold hover:scale-105 transition-transform">View Live Site</a>
             </div>
           </div>
           <div class="p-8 md:p-12 flex flex-col justify-center gap-6">
-            <div class="flex gap-2">
+            <div class="flex flex-wrap gap-2">
               <span class="px-3 py-1 rounded-full bg-[#0b0e1a] text-xs font-mono text-[#e2f24d] border border-white/5">HTML</span>
               <span class="px-3 py-1 rounded-full bg-[#0b0e1a] text-xs font-mono text-[#e2f24d] border border-white/5">CSS</span>
               <span class="px-3 py-1 rounded-full bg-[#0b0e1a] text-xs font-mono text-[#e2f24d] border border-white/5">JS</span>
@@ -276,6 +280,7 @@
             </div>
           </div>
         </div>
+      </div>
       
       <!-- 2nd Project -->
       <div class="bg-[#161615] rounded-3xl overflow-hidden border border-white/10 group">
@@ -290,7 +295,7 @@
             </div>
           </div>
           <div class="p-8 md:p-12 flex flex-col justify-center gap-6">
-            <div class="flex gap-2">
+            <div class="flex flex-wrap gap-2">
               <span class="px-3 py-1 rounded-full bg-[#0b0e1a] text-xs font-mono text-[#e2f24d] border border-white/5">Node.js</span>
               <span class="px-3 py-1 rounded-full bg-[#0b0e1a] text-xs font-mono text-[#e2f24d] border border-white/5">Express.js</span>
               <span class="px-3 py-1 rounded-full bg-[#0b0e1a] text-xs font-mono text-[#e2f24d] border border-white/5">Prisma</span>
@@ -320,16 +325,16 @@
         Got a project in mind or just want to say hi? Feel free to reach out. I'm currently open for new opportunities.
       </p>
       
-      <a href="mailto:tofayel.ahmmed084@gmail.com" class="inline-block px-10 py-5 rounded-full bg-[#e2f24d] text-[#161615] font-bold text-lg hover:bg-[#d0df3c] transition-all transform hover:-translate-y-1 shadow-[0_0_30px_rgba(226,242,77,0.3)]">
-        tofayel.ahmmed084@gmail.com
-      </a>
+      <a href="mailto:tofayel.ahmmed084@gmail.com"
+        class="inline-block w-full sm:w-auto px-6 py-4 sm:px-10 sm:py-5 rounded-full bg-[#e2f24d] text-[#161615] font-bold text-base sm:text-lg hover:bg-[#d0df3c] transition-all transform hover:-translate-y-1 shadow-[0_0_30px_rgba(226,242,77,0.3)] text-center sm:text-left break-all sm:break-normal"> tofayel.ahmmed084@gmail.com
+        </a>
 
-      <div class="flex flex-col sm:flex-row justify-center gap-6 mt-10 text-center">
-        <a href="tel:+8801316767316" class="text-white/70 hover:text-[#e2f24d] transition-colors flex items-center gap-3">
+      <div class="flex flex-col sm:flex-row justify-center gap-6 mt-10">
+        <a href="tel:+8801316767316" class="flex items-center justify-center gap-3 text-white/70 hover:text-[#e2f24d] transition-colors">
           <i class="fas fa-phone text-xl"></i>
           <span>+880 131 6767316</span>
         </a>
-        <a href="https://www.google.com/maps/place/Chittagong,+Bangladesh" target="_blank" class="text-white/70 hover:text-[#e2f24d] transition-colors flex items-center gap-3">
+        <a href="https://www.google.com/maps/place/Chittagong,+Bangladesh" target="_blank" class="flex items-center justify-center gap-3 text-white/70 hover:text-[#e2f24d] transition-colors">
           <i class="fas fa-map-marker-alt text-xl"></i>
           <span>Chittagong, Bangladesh</span>
         </a>
