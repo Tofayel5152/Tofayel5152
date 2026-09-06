@@ -4,7 +4,9 @@ A personal portfolio website showcasing my background, skills, and projects as a
 
 🔗 **Live Site:** https://tofayel5152.github.io/Tofayel5152/
 
-![Portfolio Preview](Pictures/PP.png)
+<p align ="center">
+    <img src="Pictures/PP.png" alt="Portfolio Preview" width="500">
+  </p>
 
 ## 👋 About
 
