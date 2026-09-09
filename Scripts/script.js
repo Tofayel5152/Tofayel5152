@@ -1,5 +1,5 @@
 // Simple interactions for the portfolio
-
+let scrollTicking = false;
 document.addEventListener('DOMContentLoaded', () => {
   
   // Set current year in footer
@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Navbar scroll effect
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
+const navbar = document.getElementById('navbar');
+  function updateNavbar() {
     if (window.scrollY > 50) {
       navbar.classList.add('py-2');
       navbar.classList.remove('py-4');
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.classList.add('py-4');
       navbar.classList.remove('py-2');
     }
-  });
+  }
 
   // Mobile menu toggle
   const mobileBtn = document.getElementById('mobile-btn');
@@ -67,24 +67,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('header, section');
   const navLinks = document.querySelectorAll('.nav-link');
   
-  window.addEventListener('scroll', () => {
+  function updateScrollSpy() {
     let current = '';
-    
+
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
-      if (scrollY >= (sectionTop - window.innerHeight / 3)) {
+      if (window.scrollY >= (sectionTop - window.innerHeight / 3)) {
         current = section.getAttribute('id');
       }
     });
 
-    // If we're at the very bottom of the page, force the last section to be active
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
       if (sections.length > 0) {
         current = sections[sections.length - 1].getAttribute('id');
       }
     }
 
-    // Update Desktop Links
     navLinks.forEach(link => {
       link.classList.remove('text-[#e2f24d]');
       link.classList.add('text-white/70');
@@ -94,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Update Mobile Links
     mobileLinks.forEach(link => {
       link.classList.remove('text-[#e2f24d]');
       link.classList.add('text-white');
@@ -103,5 +100,17 @@ document.addEventListener('DOMContentLoaded', () => {
         link.classList.remove('text-white');
       }
     });
+  }
+
+  // Single throttled scroll listener drives both the navbar and ScrollSpy
+  window.addEventListener('scroll', () => {
+    if (!scrollTicking) {
+      window.requestAnimationFrame(() => {
+        updateNavbar();
+        updateScrollSpy();
+        scrollTicking = false;
+      });
+      scrollTicking = true;
+    }
   });
 });
