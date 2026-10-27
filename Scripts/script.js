@@ -20,6 +20,16 @@ const navbar = document.getElementById('navbar');
     }
   }
 
+  // Back to top button
+  const backToTop = document.getElementById('back-to-top');
+  function updateBackToTop() {
+    if (window.scrollY > 400) {
+      backToTop.classList.remove('opacity-0', 'pointer-events-none');
+    } else {
+      backToTop.classList.add('opacity-0', 'pointer-events-none');
+    }
+  }
+
   // Mobile menu toggle
   const mobileBtn = document.getElementById('mobile-btn');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -108,6 +118,7 @@ const navbar = document.getElementById('navbar');
       window.requestAnimationFrame(() => {
         updateNavbar();
         updateScrollSpy();
+        updateBackToTop();
         scrollTicking = false;
       });
       scrollTicking = true;

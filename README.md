@@ -10,7 +10,7 @@ A personal portfolio website showcasing my background, skills, and projects as a
 
 ## 👋 About
 
-I'm a Computer Science & Engineering student and Full-Stack Developer dedicated to building clean, scalable web applications. I specialize in crafting modern web solutions using **React** on the frontend alongside **Node.js, Express, and Spring Boot** on the backend, backed by databases like **MySQL** and **PostgreSQL**.
+I'm a Computer Science & Engineering student and Full-Stack Developer dedicated to building clean, scalable web applications. I specialize in crafting modern web solutions using **HTML, CSS, JavaScript and Tailwind CSS** on the frontend alongside **Node.js, Express, and Spring Boot** on the backend, backed by databases like **MySQL** and **PostgreSQL**.
 
 My academic journey has built a versatile foundation across full-stack web development as well as core systems programming in **C, C++, and Java**. I approach software engineering with a "learning by building" mindset, leveraging strong Data Structures and Algorithms fundamentals to write efficient, maintainable code.
 
@@ -36,7 +36,7 @@ A responsive web platform built to showcase handcrafted desserts and cakes. Feat
 
 - **Tech:** HTML, CSS, JS
 - **Live Site:** https://tasmindesserts.github.io/TasminDesserts/
-- **Source Code:** https://github.com/TasminDesserts/TasminDesserts.git
+- **Source Code:** https://github.com/TasminDesserts/TasminDesserts
 
 ### 2. Med-Review — REST API
 A backend REST API powering a verified review platform for hospitals and doctors — patients must prove a visit before reviewing, ensuring authentic feedback. Secured with JWT authentication and role-based access for patients, doctors, and admins.
@@ -51,10 +51,12 @@ A backend REST API powering a verified review platform for hospitals and doctors
 ├── Scripts/
 │   └── script.js       # Navbar scroll effect, mobile menu, scrollspy
 └── Pictures/
-    ├── PP.png           # Profile picture
-    ├── IIUC.png         # University logo
-    ├── web1st.png       # Tasmin Desserts preview
-    └── web2nd.png       # Med-Review preview
+    ├── PP.webp          # Profile picture
+    ├── PP-share.jpg     # Link preview image
+    ├── PP.png           # Profile picture (used in this README)
+    ├── IIUC.webp        # University logo
+    ├── web1st.webp      # Tasmin Desserts preview
+    └── web2nd.webp      # Med-Review preview
 ```
 
 ## ✨ Features
